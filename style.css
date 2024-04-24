@@ -1,0 +1,135 @@
+body {
+  background-color: #F1F5F8;
+  font-family: Roboto, sans-serif;
+
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+h1{
+  font-family: Roboto, sans-serif;
+  color: #102A42;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+h1::after {
+  content: "";
+  height: 4px;
+  width: 90px;
+  background-color: #49A6E9;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-168px,50px);
+}
+.card-container {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  padding: 30px;
+  margin: 0 150px;
+  width: 620px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.image-box {
+  display: flex;
+  justify-content:center;
+}
+.image-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+   display:inline-block;
+   z-index: 1;
+
+}
+.image-box::after {
+  content: "";
+  background-color: #49A6E9;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  transform: translate(9px,-4px);
+
+}
+
+.fa-quote-right {
+  z-index: 2;
+  color: #fff;
+  font-size: 1.2rem;
+  position: absolute;
+    transform: translate(-63px,15px);
+}
+.fa-quote-right::after {
+  content: "";
+  background-color:  #49A6E9;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-25px,-8px);
+  z-index: -2;
+}
+
+.id-info h4 {
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  padding: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #444;
+}
+.id-info span {
+  font-size: 0.8rem;
+  color: #49A6E9;
+}
+.description  {
+  font-size: 16px;
+  display: flex;
+  justify-content:center;
+}
+.description p {
+  width: 556px;
+  line-height: 25px;
+  color:  grey;
+}
+
+.rows .fa-angle-left,.rows .fa-angle-right{
+  font-size:  1.7rem !important;
+  color:  #49A6E9;
+  opacity: 0.7;
+  margin: 5px 10px;
+}
+.fa-solid {
+  cursor: pointer;
+}
+.button #btn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid  #49A6E9;
+  color: #49A6E9;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 1s;
+}
+.button #btn:hover{
+  color: black;
+  background-color:  #49A6E9;
+
+}
+
+@media screen and (max-width:650px) {
+  .card-container {
+    width: 80%;
+  }
+}
